@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tooltip - Belajar Bootstrap</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    .custom-tooltip {
+      --bs-tooltip-bg: var(--bs-success);
+    }
+  </style>
+</head>
+
+<body class="min-vh-100 bg-white">
+  <main class="container-md border-start border-end min-vh-100 px-0">
+    <!-- Tooltip -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Tooltip</h5>
+      </div>
+      <div class="pt-4">
+        <p class="muted">Lorem ipsum dolor sit,<a href="#" data-bs-toggle="tooltip"
+            data-bs-title="Default tooltip">inline links</a> amet consectetur adipisicing elit. Cum dignissimos ut quas
+          a, alias recusandae atque! Voluptate perferendis accusamus earum quae distinctio! Non, voluptatem. <a href="#"
+            data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an
+          idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a
+            href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work
+          in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your
+            own</a> Obcaecati ex maxime quaerat optio est?</p>
+      </div>
+    </div>
+    <!-- Custom Tooltip -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Custom Tooltip</h5>
+      </div>
+      <div class="pt-4">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+          data-bs-custom-class="custom-tooltip" data-bs-title="This top tooltip is themed via CSS variables.">
+          Custom tooltip
+        </button>
+      </div>
+    </div>
+    <!-- Custom Direction -->
+    <div class="p-4">
+      <div>
+        <h5 class="m-0 p-0">Posisi Tooltip</h5>
+      </div>
+      <div class="pt-4">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+          data-bs-title="Tooltip on top">
+          Tooltip di atas
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-title="Tooltip on right">
+          Tooltip di kanan
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+          data-bs-title="Tooltip on bottom">
+          Tooltip di bawah
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
+          data-bs-title="Tooltip on left">
+          Tooltip di kiri
+        </button>
+      </div>
+    </div>
+  </main>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+
+</html>

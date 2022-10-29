@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popover - Belajar Bootstrap</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    .custom-popover {
+      --bs-popover-max-width: 200px;
+      --bs-popover-border-color: var(--bs-primary);
+      --bs-popover-header-bg: var(--bs-primary);
+      --bs-popover-header-color: var(--bs-white);
+      --bs-popover-body-padding-x: 1rem;
+      --bs-popover-body-padding-y: .5rem;
+    }
+  </style>
+</head>
+
+<body class="min-vh-100 bg-white">
+  <main class="container-md border-start border-end min-vh-100 px-0">
+    <!-- Popover -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Popover</h5>
+      </div>
+      <div class="pt-4">
+        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover Default"
+          data-bs-content="Hai Dunia?">Tampilkan Popover</button>
+      </div>
+    </div>
+    <!-- Popover Direction -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Popover Posisi</h5>
+      </div>
+      <div class="pt-4">
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+          data-bs-placement="top" data-bs-content="Top popover">
+          Popover diatas
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+          data-bs-placement="right" data-bs-content="Right popover">
+          Popover dikanan
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+          data-bs-placement="bottom" data-bs-content="Bottom popover">
+          Popover dibawah
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+          data-bs-placement="left" data-bs-content="Left popover">
+          Popover dikiri
+        </button>
+      </div>
+    </div>
+    <!-- Popover Custom -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Popover Custom</h5>
+      </div>
+      <div class="pt-4">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right"
+          data-bs-custom-class="custom-popover" data-bs-title="Custom Popover"
+          data-bs-content="Ini popover yang dikustom">
+          Tampilkan
+        </button>
+      </div>
+    </div>
+  </main>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
+</body>
+
+</html>

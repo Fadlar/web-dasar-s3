@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown - Belajar Bootstrap</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="min-vh-100 bg-white">
+  <main class="container-md border-start border-end min-vh-100 px-0">
+    <!-- Dropdown Menu Button Group -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Dropdown Menu Button Group Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary">Tombol 1</button>
+          <button type="button" class="btn btn-primary">Tombol 2</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+              Tombol 3
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Sub Menu 1</a>
+              <a class="dropdown-item" href="#">Sub Menu 2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Dropdown Menu Button Group Vertical -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Dropdown Menu Button Group Vertical Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="btn-group-vertical">
+          <button type="button" class="btn btn-primary">Tombol 1</button>
+          <button type="button" class="btn btn-primary">Tombol 2</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+              Tombol 3
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Sub Menu 1</a>
+              <a class="dropdown-item" href="#">Sub Menu 2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Dropdown Menu Split -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Dropdown Menu Split Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary">Split Dropdown</button>
+          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sub Menu 1</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 2</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Dropdown Menu Split -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Dropdown Menu Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <div class="dropdown-header" href="#">Title Header</div>
+            <li><a class="dropdown-item" href="#">Sub Menu 1</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 2</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 3</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#">Sub Menu 4</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 5</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Dropdown Menu Position -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Dropdown Position Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu Dropdown Default
+          </button>
+          <ul class="dropdown-menu">
+            <div class="dropdown-header" href="#">Title Header</div>
+            <li><a class="dropdown-item" href="#">Sub Menu 1</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 2</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 3</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#">Sub Menu 4</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 5</a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu Dropdown Right
+          </button>
+          <ul class="dropdown-menu dropdown-menu-start">
+            <div class="dropdown-header" href="#">Title Header</div>
+            <li><a class="dropdown-item" href="#">Sub Menu 1</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 2</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 3</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#">Sub Menu 4</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 5</a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu Dropdown Left
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <div class="dropdown-header" href="#">Title Header</div>
+            <li><a class="dropdown-item" href="#">Sub Menu 1</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 2</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 3</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="#">Sub Menu 4</a></li>
+            <li><a class="dropdown-item" href="#">Sub Menu 5</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

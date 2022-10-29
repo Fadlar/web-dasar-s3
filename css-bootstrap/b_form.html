@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form - Belajar Bootstrap</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="min-vh-100 bg-white">
+  <main class="container-md border-start border-end min-vh-100 px-0">
+    <!-- Form -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Layout Form Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="card">
+          <div class="card-header bg-primary text-white">Register Form</div>
+          <div class="card-body">
+            <form action="#">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control">
+              </div>
+              <button class="btn btn-primary">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form Input -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Form Input Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="card">
+          <div class="card-header bg-primary text-white">Login Form</div>
+          <div class="card-body">
+            <form action="#">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control">
+              </div>
+              <button class="btn btn-primary">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form Textarea -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Form Textarea Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="card">
+          <div class="card-header bg-primary text-white">Form Textarea</div>
+          <div class="card-body">
+            <form action="#">
+              <div class="mb-3">
+                <label for="alamat" class="form-label">Alamat</label>
+                <textarea name="alamat" id="alamat" class="form-control"></textarea>
+              </div>
+              <button class="btn btn-primary">Input</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form Checkbox -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Form Checkbox Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="card">
+          <div class="card-header bg-primary text-white">Form Checkbox</div>
+          <div class="card-body">
+            <form action="#">
+              <div class="form-check">
+                <label for="pil1" class="form-check-label">Pilihan 1</label>
+                <input type="checkbox" name="pil1" id="pil1" class="form-check-input"></input>
+              </div>
+              <div class="form-check">
+                <label for="pil2" class="form-check-label">Pilihan 2</label>
+                <input type="checkbox" name="pil1" id="pil2" class="form-check-input"></input>
+              </div>
+              <div class="form-check">
+                <label for="pil3" class="form-check-label">Pilihan 3</label>
+                <input type="checkbox" name="pil1" id="pil3" value="" class="form-check-input" disabled checked></input>
+              </div>
+              <div class="form-check">
+                <label for="pil4" class="form-check-label">Pilihan 4</label>
+                <input type="checkbox" name="pil1" id="pil4" class="form-check-input"></input>
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="pil5" class="form-check-label">Pilihan 5</label>
+                <input type="checkbox" name="pil1" id="pil5" class="form-check-input"></input>
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="pil6" class="form-check-label">Pilihan 6</label>
+                <input type="checkbox" name="pil1" id="pil6" class="form-check-input"></input>
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="pil7" class="form-check-label">Pilihan 7</label>
+                <input type="checkbox" name="pil1" id="pil7" value="" class="form-check-input" disabled checked></input>
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="pil8" class="form-check-label">Pilihan 8</label>
+                <input type="checkbox" name="pil1" id="pil8" class="form-check-input"></input>
+              </div>
+              <div class="d-block mt-3">
+                <button class="btn btn-primary">Input</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form Radio -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Form Radio Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="card">
+          <div class="card-header bg-primary text-white">Form Checkbox</div>
+          <div class="card-body">
+            <form action="#">
+              <div class="form-check">
+                <label for="pil1radio" class="form-check-label">Pilihan 1</label>
+                <input type="radio" name="pil1radio" id="pil1radio" class="form-check-input"></input>
+              </div>
+              <div class="form-check">
+                <label for="pil2radio" class="form-check-label">Pilihan 2</label>
+                <input type="radio" name="pil1radio" id="pil2radio" class="form-check-input"></input>
+              </div>
+              <div class="form-check">
+                <label for="pil3radion" class="form-check-label">Pilihan 3</label>
+                <input type="radio" name="pil1radion" id="pil3radion" value="" class="form-check-input" disabled checked></input>
+              </div>
+              <div class="form-check">
+                <label for="pil4radio" class="form-check-label">Pilihan 4</label>
+                <input type="radio" name="pil1radio" id="pil4radio" class="form-check-input"></input>
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="pil5radio" class="form-check-label">Pilihan 5</label>
+                <input type="radio" name="pil1radio" id="pil5radio" class="form-check-input"></input>
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="pil6radio" class="form-check-label">Pilihan 6</label>
+                <input type="radio" name="pil1radio" id="pil6radio" class="form-check-input"></input>
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="pil7radio" class="form-check-label">Pilihan 7</label>
+                <input type="radio" name="pil1radio" id="pil7radio" value="" class="form-check-input" disabled checked></input>
+              </div>
+              <div class="form-check form-check-inline">
+                <label for="pil8radio" class="form-check-label">Pilihan 8</label>
+                <input type="radio" name="pil1radio" id="pil8radio" class="form-check-input"></input>
+              </div>
+              <div class="d-block mt-3">
+                <button class="btn btn-primary">Input</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form Select -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Form Select Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="card">
+          <div class="card-header bg-primary text-white">Form Select</div>
+          <div class="card-body">
+            <form action="#">
+              <div class="mb-3">
+                <label for="alamat" class="form-label">Pilih</label>
+                <select name="select" id="select" class="form-select">
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="alamat" class="form-label">Pilih</label>
+                <select name="select" id="select" class="form-select" multiple>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                </select>
+              </div>
+              <button class="btn btn-primary">Input</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert - Belajar Bootstrap</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="min-vh-100 bg-white">
+  <main class="container-md border-start border-end min-vh-100 px-0">
+    <!-- Alert -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Alert Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="alert alert-success">
+          <strong>Success!</strong>
+          Alert yang menggunakan class alert-success
+        </div>
+        <div class="alert alert-info">
+          <strong>Info!</strong>
+          Alert yang menggunakan class alert-info
+        </div>
+        <div class="alert alert-warning">
+          <strong>Warning!</strong>
+          Alert yang menggunakan class alert-warning
+        </div>
+        <div class="alert alert-danger">
+          <strong>Danger!</strong>
+          Alert yang menggunakan class alert-danger
+        </div>
+        <div class="alert alert-primary">
+          <strong>Primary!</strong>
+          Alert yang menggunakan class alert-primary
+        </div>
+        <div class="alert alert-secondary">
+          <strong>Secondary!</strong>
+          Alert yang menggunakan class alert-secondary
+        </div>
+        <div class="alert alert-dark">
+          <strong>Dark!</strong>
+          Alert yang menggunakan class alert-dark
+        </div>
+        <div class="alert alert-light">
+          <strong>Light!</strong>
+          Alert yang menggunakan class alert-light
+        </div>
+      </div>
+    </div>
+    <!-- Alert Link -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Penggunaan Class alert-link pada link</h5>
+      </div>
+      <div class="pt-4">
+        <div class="alert alert-success">
+          <strong>Success!</strong>
+          |
+          <a href="#" class="alert-link">Klik Disini</a>
+        </div>
+        <div class="alert alert-info">
+          <strong>Info!</strong>
+          |
+          <a href="#" class="alert-link">Klik Disini</a>
+        </div>
+      </div>
+    </div>
+    <!-- Alert NotLink -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Link yang tidak menggunakan alert-link</h5>
+      </div>
+      <div class="pt-4">
+        <div class="alert alert-success">
+          <strong>Success!</strong>
+          |
+          <a href="#">Klik Disini</a>
+        </div>
+        <div class="alert alert-info">
+          <strong>Info!</strong>
+          |
+          <a href="#">Klik Disini</a>
+        </div>
+      </div>
+    </div>
+    <!-- Alert Close -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Penggunaan Tombol Close Alert Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Alert dengan class alert-success</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <strong>Alert dengan class alert-info</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>Alert dengan class alert-warning</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

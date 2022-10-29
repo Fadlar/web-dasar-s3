@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapse - Belajar Bootstrap</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="min-vh-100 bg-white">
+  <main class="container-md border-start border-end min-vh-100 px-0">
+    <!-- Collapse -->
+    <div class="p-4 border-bottom">
+      <div>
+        <h5 class="m-0 p-0">Collapse Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <a href="#kotak" class="btn btn-primary" data-bs-toggle="collapse">Klik Disini</a>
+        <div id="kotak" class="collapse">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, exercitationem delectus! Quidem excepturi illo
+          aperiam provident aliquam incidunt delectus non blanditiis exercitationem ducimus quis tempore quaerat est
+          distinctio cum quo inventore, dolore nihil pariatur eum dignissimos, ipsam, praesentium quasi eos? Nesciunt,
+          voluptate ad dolorum laudantium ullam, eaque saepe nulla explicabo pariatur inventore molestiae tenetur, at
+          ipsam? Odit rerum quod ea veniam hic, distinctio officia corrupti delectus ratione modi dicta, quia repellat
+          culpa aspernatur. Facilis quod laudantium reprehenderit quia quam deleniti vel, impedit nesciunt sequi eum
+          quasi magnam. Reiciendis magni sequi, ipsa, laudantium id libero repellendus repellat ad qui saepe officiis
+          quas animi porro magnam cupiditate consequatur sapiente dolorum. Placeat saepe sed reprehenderit modi eos
+          veniam consequuntur ab repudiandae cumque voluptatum veritatis delectus eaque, nisi laboriosam numquam magnam
+          ex aut, voluptatem facere ipsam culpa? Doloribus tempora qui ab aliquam minus sit id dolor cumque veniam
+          voluptas perspiciatis sed error soluta repellendus facilis maxime sint, modi maiores ad, nam dolorem at.
+          Accusantium consequatur tenetur unde pariatur voluptatum fugiat, omnis eos ullam vel tempora facilis
+          praesentium laboriosam distinctio, quas possimus iste debitis quis quam quae? Nostrum corrupti rerum
+          voluptatum nobis est quibusdam repellendus atque aspernatur. Dicta veritatis reiciendis iste illo error cum
+          magni.
+        </div>
+      </div>
+    </div>
+    <!-- Multi Collapse -->
+    <div class="p-4">
+      <div>
+        <h5 class="m-0 p-0">Multi Collapse Bootstrap 5</h5>
+      </div>
+      <div class="pt-4">
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1">Content 1</a>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2">Content 2</a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse">Content 1 & 2</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                Isi Content 1 ,Isi Content 1 ,Isi Content 1 ,Isi Content 1 ,Isi Content 1 ,Isi Conten
+                t 1 ,Isi Content 1 ,Isi Content 1 ,Isi Content 1 ,Isi Content 1 ,Isi Content 1 ,Isi Content 1
+                ,Isi Content 1 ,Isi Content 1 ,Isi Content 1 ,Isi Content 1
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                Isi Content 2 ,Isi Content 2 ,Isi Content 2 ,Isi Content 2 ,Isi Content 2 ,Isi Conten
+                t 2 ,Isi Content 2 ,Isi Content 2 ,Isi Content 2 ,Isi Content 2 ,Isi Content 2 ,Isi Content 2
+                ,Isi Content 2 ,Isi Content 2 ,Isi Content 2 ,Isi Content 2
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
